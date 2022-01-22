@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./script/script.js"></script>
   </head>
@@ -24,6 +30,42 @@
         <li>Artist</li>
         <li>Albums</li>
       </ul>
-    </div>a
+    </div>
+    <div class="container">
+      <div class="controller">
+        <div class="goBack"></div>
+        <div class="goForward"></div>
+        <div class="searchBox">
+          <input
+            class="input"
+            type="text"
+            placeholder="Search for artist songs and ..."
+          />
+        </div>
+      </div>
+      <div class="displaySection">
+        <div class="trend">
+          <p>What's hot</p>
+          <div class="inline">
+            <h3>Trending</h3>
+            <p>More ></p>
+          </div>
+        </div>
+
+        <div class="playlist">
+          <div class="inline">
+            <h3>My Playlist</h3>
+            <p>Show All</p>
+          </div>
+          <div class="playlist"></div>
+        </div>
+      </div>
+      <div class="songInfo"></div>
+    </div>
+    <div class="rightNav">
+      <div class="shortcuts"></div>
+      <div class="fav"></div>
+      <div class="banner"></div>
+    </div>
   </body>
 </html>

@@ -16,19 +16,67 @@
   --text-color: #7b7a7c;
 }
 
+html {
+  font-family: "Poppins";
+  height: 100%;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
 body {
-  font-family: "Space Mono", monospace;
   background: var(--container-bg);
+  display: flex;
+  min-height: 100%;
 }
 .sideNavigation {
   background: var(--nav-bg);
-  height: 100%;
-  width: 20;
-  position: fixed;
-  z-index: 1;
-  top: 0;
+  width: 20%;
   left: 0;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding: 60px 20px;
+}
+.controller {
+  margin: auto;
+  width: 60%;
+}
+.input {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: transparent;
+  transition: transform 250ms ease-in-out;
+  font-size: 14px;
+  line-height: 18px;
+  color: #575756;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid #575756;
+  transition: all 250ms ease-in-out;
+}
+
+.input:hover,
+.input:focus {
+  outline: 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #575756;
+  border-radius: 0;
+  background-position: 100% center;
+}
+.input:focus::placeholder {
+  font-family: "Poppins";
+  color: transparent;
+  transition: all 150ms ease-in-out;
+}
+
+/* =====================
+Component Style
+=====================*/
+a {
+  text-decoration: none;
+  display: block;
+  color: var(--text-color);
+  background-color: transparent;
+  cursor: pointer;
+}
+ul {
+  list-style-type: none;
 }
