@@ -4,6 +4,31 @@
   box-sizing: border-box;
 }
 
+:root {
+  --nav-bg: #f3f8ff;
+  --container-bg: linear-gradient(
+    90deg,
+    rgba(198, 207, 255, 1) 5%,
+    rgba(222, 236, 255, 1) 40%,
+    rgba(232, 211, 255, 1) 100%
+  );
+  --btn--bg: #15111e;
+  --text-color: #7b7a7c;
+}
+
 body {
   font-family: "Space Mono", monospace;
+  background: var(--container-bg);
+}
+.sideNavigation {
+  background: var(--nav-bg);
+  height: 100%;
+  width: 20;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
